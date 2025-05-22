@@ -1,0 +1,3 @@
+kolai,123,15-09-2025,active
+consuelo,456,17-01-1969,active
+chabi,789,9-09-2015,inactive
