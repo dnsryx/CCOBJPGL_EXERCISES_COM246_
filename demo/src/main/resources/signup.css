@@ -1,0 +1,74 @@
+/* ========== GLOBAL STYLES ========== */
+.root {
+    -fx-font-family: "Poppins";
+    -fx-background-color: #212844;
+}
+
+/* ========== BUTTONS ========== */
+
+/* Sign up Button */
+#PSUBUTTON {
+    -fx-background-color: #212844;
+    -fx-background-radius: 20;
+    -fx-text-fill: #fefdf7;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0.3, 0, 2);
+}
+
+#PSUBUTTON:hover {
+    -fx-background-color: #3d4a77;
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+/* Login Button */
+#SULGBTN {
+    -fx-background-color: #f0e8d5;
+    -fx-text-fill: #212844;
+    -fx-background-radius: 20;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0.3, 0, 2);
+}
+
+#SULGBTN:hover {
+    -fx-background-color: #fff8e8;
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+
+#LGBUTTON{
+
+    -fx-background-color: #212844;
+    -fx-background-radius: 20;
+    -fx-text-fill: #fefdf7;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0.3, 0, 2);
+}
+#LGBUTTON:hover{
+
+    -fx-background-color: #fff8e8;
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}
+#LGSUBTN{
+    -fx-background-color: #212844;
+    -fx-background-radius: 20;
+    -fx-text-fill: #212844;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0.3, 0, 2);
+}
+#LGSUBTN:hover{
+
+    fx-background-color: #fff8e8;
+    -fx-scale-x: 1.02;
+    -fx-scale-y: 1.02;
+}

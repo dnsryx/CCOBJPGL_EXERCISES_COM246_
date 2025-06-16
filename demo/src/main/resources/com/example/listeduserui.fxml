@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: #eee9e2;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.LibraryUiController">
+   <children>
+      <HBox prefHeight="105.0" prefWidth="1080.0" style="-fx-background-color: #212844; -fx-background-radius: 0px 0px 35px 35px;" VBox.vgrow="ALWAYS">
+         <children>
+            <FontIcon iconColor="#f0e8d5cf" iconLiteral="fas-feather-alt" iconSize="30" translateX="35.0" translateY="38.0" />
+            <Label text="Fiction Press" textFill="#f0e8d5" translateX="40.0" translateY="40.0">
+               <font>
+                  <Font name="Poppins Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" style="-fx-background-color: transparent;" text="Discovery" textFill="#eee9e2" translateX="90.0" translateY="50.0">
+               <font>
+                  <Font name="Poppins Light" size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Hyperlink text="Library" textFill="#f0e8d5" translateX="140.0" translateY="52.0">
+               <font>
+                  <Font name="Poppins Light" size="15.0" />
+               </font>
+            </Hyperlink>
+            <TextField prefHeight="40.0" prefWidth="310.0" style="-fx-background-color: transparent; -fx-border-color: #87888a; -fx-border-width: 2px 2px 2px 2px; -fx-border-radius: 20px 20px 20px 20px;" translateX="230.0" translateY="50.0" />
+            <FontIcon iconColor="#87888a" iconLiteral="far-user-circle" iconSize="50" translateX="260.0" translateY="45.0">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </FontIcon>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </HBox>
+      <VBox prefHeight="603.0" prefWidth="1080.0" style="-fx-background-color: #eee9e2; -fx-background-radius: 20px 20px 20px 20px;" VBox.vgrow="ALWAYS">
+         <children>
+            <VBox prefHeight="32.0" prefWidth="1080.0">
+               <children>
+                  <Line endX="289.95953369140625" endY="-0.41421353816986084" startX="-100.0" translateX="600.0" translateY="390.0" />
+                  <Label text="Make This List Private..." translateX="730.0" translateY="290.0">
+                     <VBox.margin>
+                        <Insets bottom="-30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Poppins Light" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label text="Edit or delete this list…" translateX="730.0" translateY="235.0">
+                     <VBox.margin>
+                        <Insets bottom="-30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Poppins Light" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label text="No Likes Yet" translateX="780.0" translateY="180.0">
+                     <VBox.margin>
+                        <Insets bottom="-30.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Poppins Light" size="15.0" />
+                     </font>
+                  </Label>
+                  <FontIcon iconLiteral="fas-heart" iconSize="25" translateX="750.0" translateY="185.0" />
+                  <Label text="Listed by " translateX="100.0" translateY="50.0">
+                     <font>
+                        <Font name="Poppins Light" size="15.0" />
+                     </font>
+                  </Label>
+                  <FontIcon iconLiteral="far-user-circle" iconSize="25" translateX="70.0" translateY="25.0" />
+                  <Label text="User" translateX="170.0" translateY="4.0">
+                     <font>
+                        <Font name="System Bold Italic" size="15.0" />
+                     </font>
+                  </Label>
+                  <Line endX="771.2929077148438" endY="-7.041627883911133" startX="-174.6482696533203" startY="-7.041626930236816" translateX="60.0" translateY="20.0" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="-10.0" />
+               </VBox.margin>
+            </VBox>
+            <Label lineSpacing="1.4" text="for when you want to feel something" textAlignment="CENTER" translateX="60.0" translateY="35.0" wrapText="true">
+               <font>
+                  <Font name="Poppins Bold" size="20.0" />
+               </font>
+            </Label>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="this is just purely a list of books that have impacted me and have made me reflect and change my view on some things.These books can range from emotional rollercoasters to psychological thrillers with deep meanings reflecting back on society. Each of the different genres make me feel some typa way so if you're looking for something to read that is worth your time and not a boring book then hopefully you randomly pick a book from this compiled list and you have a great time! " translateX="30.0" translateY="40.0" wrappingWidth="507.4700527191162">
+               <font>
+                  <Font name="Poppins Light" size="15.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="65.0" stroke="BLACK" strokeType="INSIDE" translateX="650.0" translateY="-130.0" width="320.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="65.0" stroke="BLACK" strokeType="INSIDE" translateX="650.0" translateY="-130.0" width="320.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="65.0" stroke="BLACK" strokeType="INSIDE" translateX="650.0" translateY="-130.0" width="320.0" />
+            <ImageView fitHeight="170.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" translateX="30.0" translateY="90.0">
+               <VBox.margin>
+                  <Insets top="-200.0" />
+               </VBox.margin>
+               <image>
+                  <Image url="@../../images/aogg.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="170.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" translateX="430.0" translateY="120.0">
+               <VBox.margin>
+                  <Insets top="-200.0" />
+               </VBox.margin>
+               <image>
+                  <Image url="@../../images/alice.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="170.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" translateX="230.0" translateY="-50.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <image>
+                  <Image url="@../../images/hunger.jpg" />
+               </image>
+            </ImageView>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </VBox>
+   </children>
+</VBox>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: #eee9e2;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.LibraryUiController">
+   <children>
+      <HBox prefHeight="105.0" prefWidth="1080.0" style="-fx-background-color: #212844; -fx-background-radius: 0px 0px 35px 35px;" VBox.vgrow="ALWAYS">
+         <children>
+            <FontIcon iconColor="#f0e8d5cf" iconLiteral="fas-feather-alt" iconSize="30" translateX="35.0" translateY="38.0" />
+            <Label text="Fiction Press" textFill="#f0e8d5" translateX="40.0" translateY="40.0">
+               <font>
+                  <Font name="Poppins Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" style="-fx-background-color: transparent;" text="Discovery" textFill="#eee9e2" translateX="90.0" translateY="50.0">
+               <font>
+                  <Font name="Poppins Light" size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Hyperlink text="Library" textFill="#f0e8d5" translateX="140.0" translateY="52.0">
+               <font>
+                  <Font name="Poppins Light" size="15.0" />
+               </font>
+            </Hyperlink>
+            <TextField prefHeight="40.0" prefWidth="310.0" style="-fx-background-color: transparent; -fx-border-color: #87888a; -fx-border-width: 2px 2px 2px 2px; -fx-border-radius: 20px 20px 20px 20px;" translateX="230.0" translateY="50.0" />
+            <FontIcon iconColor="#87888a" iconLiteral="far-user-circle" iconSize="50" translateX="260.0" translateY="45.0">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </FontIcon>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </HBox>
+      <VBox prefHeight="603.0" prefWidth="1080.0" style="-fx-background-color: #eee9e2;" VBox.vgrow="ALWAYS">
+         <children>
+            <VBox prefHeight="51.0" prefWidth="1080.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <HBox>
+                     <children>
+                        <MenuButton mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: black;" text="Year" translateX="140.0" translateY="60.0">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Action 1" />
+                            <MenuItem mnemonicParsing="false" text="Action 2" />
+                          </items>
+                           <padding>
+                              <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+                           </padding>
+                           <font>
+                              <Font name="Poppins Light" size="12.0" />
+                           </font>
+                        </MenuButton>
+                        <MenuButton mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: black;" text="Rating" translateX="140.0" translateY="60.0">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Action 1" />
+                            <MenuItem mnemonicParsing="false" text="Action 2" />
+                          </items>
+                           <padding>
+                              <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+                           </padding>
+                           <font>
+                              <Font name="Poppins Light" size="12.0" />
+                           </font>
+                        </MenuButton>
+                        <MenuButton mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: black;" text="Popular" translateX="140.0" translateY="60.0">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Action 1" />
+                            <MenuItem mnemonicParsing="false" text="Action 2" />
+                          </items>
+                           <padding>
+                              <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+                           </padding>
+                           <font>
+                              <Font name="Poppins Light" size="12.0" />
+                           </font>
+                        </MenuButton>
+                        <MenuButton mnemonicParsing="false" style="-fx-background-color: transparent; -fx-border-color: black;" text="Genre" translateX="140.0" translateY="60.0">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Action 1" />
+                            <MenuItem mnemonicParsing="false" text="Action 2" />
+                          </items>
+                           <padding>
+                              <Insets bottom="5.0" left="20.0" right="20.0" top="5.0" />
+                           </padding>
+                           <font>
+                              <Font name="Poppins Light" size="12.0" />
+                           </font>
+                        </MenuButton>
+                     </children>
+                  </HBox>
+                  <Label text=" 2000s Year" translateX="50.0" translateY="70.0">
+                     <font>
+                        <Font name="Poppins Light" size="15.0" />
+                     </font>
+                  </Label>
+                  <Line endX="873.2929077148438" endY="1.242693305015564" startX="-100.0" startY="0.8284622430801392" translateX="50.0" translateY="70.0" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </VBox>
+            <VBox prefHeight="218.0" prefWidth="1080.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label text="Browse By" translateX="40.0">
+                     <font>
+                        <Font name="Poppins Light" size="15.0" />
+                     </font>
+                  </Label>
+               </children></VBox>
+            <GridPane prefHeight="615.0" prefWidth="1080.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="522.0" minWidth="10.0" prefWidth="431.66668701171875" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="648.3333129882812" minWidth="10.0" prefWidth="648.3333129882812" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="240.0" minWidth="0.0" prefWidth="0.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="208.0" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="434.0" minHeight="10.0" prefHeight="434.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="209.33331298828125" minHeight="0.0" prefHeight="42.6666259765625" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ImageView fitHeight="170.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" translateX="50.0" translateY="-50.0" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../../images/wz.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="170.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" translateX="250.0" translateY="-50.0" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../../images/aogg.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="170.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" translateX="460.0" translateY="-50.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../../images/saongaf.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="170.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" translateX="240.0" translateY="-50.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../../images/hunger.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="170.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" translateX="20.0" translateY="-50.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <image>
+                        <Image url="@../../images/alice.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </children>
+</VBox>

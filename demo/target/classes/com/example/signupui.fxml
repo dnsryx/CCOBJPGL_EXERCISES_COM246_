@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" stylesheets="@../../signup.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.SignupUiController">
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="540.0" style="-fx-background-color: #71788a;" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label text="Sign up" textFill="#f0e8d5" translateX="20.0" translateY="110.0">
+                     <font>
+                        <Font name="Gulfs Display Normal" size="64.0" />
+                     </font>
+                  </Label>
+                  <Label text="Username" textFill="#f0e8d5" translateX="20.0" translateY="150.0">
+                     <font>
+                        <Font name="Poppins Light" size="20.0" />
+                     </font>
+                  </Label>
+                  <FontIcon iconColor="#f0e8d5" iconLiteral="fas-user" iconSize="15" translateX="15.0" translateY="180.0" />
+                  <TextField fx:id="SUUFIELD" prefHeight="35.0" prefWidth="230.0" style="-fx-background-color: #f0e8d5; -fx-background-radius: 20px 20px 20px 20px;" translateY="155.0">
+                     <VBox.margin>
+                        <Insets left="35.0" right="30.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label text="Password" textFill="#f0e8d5" translateX="20.0" translateY="180.0">
+                     <font>
+                        <Font name="Poppins Light" size="20.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="SUPFIELD" prefHeight="35.0" prefWidth="230.0" style="-fx-background-color: #f0e8d5; -fx-background-radius: 20px 20px 20px 20px;" translateY="193.0">
+                     <VBox.margin>
+                        <Insets left="35.0" right="30.0" />
+                     </VBox.margin>
+                  </PasswordField>
+                  <FontIcon iconColor="#f0e8d5" iconLiteral="fas-lock" iconSize="15" text="" translateX="15.0" translateY="165.0" />
+                  <Label text="Email" textFill="#f0e8d5" translateX="20.0" translateY="195.0">
+                     <font>
+                        <Font name="Poppins Light" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="SUEFIELD" prefHeight="35.0" prefWidth="230.0" style="-fx-background-color: #f0e8d5; -fx-background-radius: 20px 20px 20px 20px;" translateY="210.0">
+                     <VBox.margin>
+                        <Insets left="35.0" right="30.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <FontIcon iconColor="#f0e8d5" iconLiteral="fas-envelope" iconSize="15" translateX="13.0" translateY="180.0" />
+                  <Button fx:id="PSUBUTTON" mnemonicParsing="false" onAction="#HandleSignup" prefHeight="42.0" prefWidth="393.0" style="-fx-background-color: #212844; -fx-background-radius: 20px 20px 20px 20px;" text="Sign up" textFill="#fefdf7" translateX="70.0" translateY="250.0">
+                     <font>
+                        <Font name="Poppins Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+            <VBox prefHeight="200.0" prefWidth="540.0" style="-fx-background-color: #212844;" HBox.hgrow="ALWAYS">
+               <children>
+                  <FontIcon iconColor="#f0e8d5cf" iconLiteral="fas-feather-alt" iconSize="25" translateX="25.0" translateY="110.0" />
+                  <Label text="Fiction Press" textFill="#fcfcf780" translateX="52.0" translateY="90.0">
+                     <font>
+                        <Font name="Poppins Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label text="Welcome Back!" textFill="#f0e8d5" translateX="70.0" translateY="230.0">
+                     <font>
+                        <Font name="Gulfs Display Normal" size="56.0" />
+                     </font>
+                  </Label>
+                  <Text fill="#f0e8d5" strokeType="OUTSIDE" strokeWidth="0.0" text="To keep connected with us please login with your personal info" textAlignment="CENTER" translateX="60.0" translateY="220.0" wrappingWidth="427.5335693359375">
+                     <font>
+                        <Font name="Poppins Light" size="20.0" />
+                     </font>
+                  </Text>
+                  <Button fx:id="SULGBTN" mnemonicParsing="false" onAction="#SwitchToLogin" prefHeight="40.0" prefWidth="205.0" style="-fx-background-color: f0e8d5; -fx-background-radius: 20px 20px 20px 20px;" text="Login" translateX="170.0" translateY="240.0">
+                     <font>
+                        <Font name="Poppins Bold" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+</BorderPane>

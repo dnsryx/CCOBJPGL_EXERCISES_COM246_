@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: #eee9e2;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.LibraryUiController">
+   <children>
+      <HBox prefHeight="105.0" prefWidth="1080.0" style="-fx-background-color: #212844; -fx-background-radius: 0px 0px 35px 35px;" VBox.vgrow="ALWAYS">
+         <children>
+            <Button fx:id="backButton" mnemonicParsing="false" onAction="#BackButton" text="Button" />
+            <FontIcon iconColor="#f0e8d5cf" iconLiteral="fas-feather-alt" iconSize="30" translateX="35.0" translateY="38.0" />
+            <Label text="Fiction Press" textFill="#f0e8d5" translateX="40.0" translateY="40.0">
+               <font>
+                  <Font name="Poppins Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" style="-fx-background-color: transparent;" text="Create" textFill="#eee9e2" translateX="90.0" translateY="50.0">
+               <font>
+                  <Font name="Poppins Light" size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <TextField prefHeight="40.0" prefWidth="453.0" style="-fx-background-color: transparent; -fx-border-color: #87888a; -fx-border-width: 2px 2px 2px 2px; -fx-border-radius: 20px 20px 20px 20px;" translateX="200.0" translateY="50.0" />
+            <FontIcon iconColor="#87888a" iconLiteral="far-user-circle" iconSize="50" translateX="230.0" translateY="45.0">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </FontIcon>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </HBox>
+      <VBox prefHeight="603.0" prefWidth="1080.0" style="-fx-background-color: #eee9e2; -fx-background-radius: 20px 20px 20px 20px;" VBox.vgrow="ALWAYS">
+         <children>
+            <VBox prefHeight="640.0" prefWidth="1080.0">
+               <children>
+                  <VBox VBox.vgrow="ALWAYS">
+                     <children>
+                        <GridPane prefHeight="613.0" prefWidth="1080.0">
+                          <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="392.0" minWidth="10.0" prefWidth="389.33331298828125" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="353.33331298828125" minWidth="10.0" prefWidth="330.66668701171875" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints maxHeight="609.0" minHeight="10.0" prefHeight="609.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="192.33334350585938" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="66.3333740234375" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <ImageView fitHeight="322.0" fitWidth="237.0" pickOnBounds="true" preserveRatio="true" translateX="90.0" translateY="-50.0" GridPane.hgrow="ALWAYS" GridPane.vgrow="ALWAYS">
+                                 <image>
+                                    <Image url="@../../images/wz.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Text fx:id="Abstract" fill="#212844" lineSpacing="0.5" strokeType="OUTSIDE" strokeWidth="0.0" text="folklore, legends, myths and fairy tales have followed childhood through the ages, for every healthy youngster has a wholesome and instinctive love for stories fantastic, marvelous and manifestly unreal. The winged fairies of Grimm and Andersen have brought more happiness to childish hearts than all other human creations. Yet the old time fairy tale, having served for generations, may now be classed as “historical” in the children’s library; for the time has come for a series of newer “wonder tales” in which the stereotyped genie, dwarf and fairy are eliminated, together with all the horrible and blood-curdling incidents devised by their authors to point a fearsome moral to each tale. Modern education includes morality; therefore the modern child seeks only entertainment in its wonder tales and gladly dispenses with all disagreeable incident. Having this thought in mind, the story of “The Wonderful Wizard of Oz” was written solely to please children of today. It aspires to being a modernized fairy tale, in which the wonderment and joy are retained and the heartaches and nightmares are left out." textAlignment="CENTER" translateY="-20.0" wrappingWidth="379.47003173828125" GridPane.columnIndex="1" />
+                              <Text fill="#212844" strokeType="OUTSIDE" strokeWidth="0.0" text="The wizard of Oz" translateX="10.0" translateY="-200.0" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font name="Poppins Bold" size="25.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#212844" strokeType="OUTSIDE" strokeWidth="0.0" text="Written  by Frank Baum" translateX="20.0" translateY="-170.0" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font name="Poppins Light" size="15.0" />
+                                 </font>
+                              </Text>
+                              <GridPane prefHeight="544.0" prefWidth="354.0" GridPane.columnIndex="2">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="354.0" minWidth="10.0" prefWidth="354.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="169.0" minWidth="0.0" prefWidth="0.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints maxHeight="249.0" minHeight="10.0" prefHeight="233.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="249.0" minHeight="10.0" prefHeight="233.0" vgrow="SOMETIMES" />
+                                  <RowConstraints maxHeight="406.0" minHeight="10.0" prefHeight="160.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="251.99996948242188" minHeight="0.0" prefHeight="185.33334350585938" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="196.3333740234375" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="50.0" stroke="BLACK" strokeType="INSIDE" translateX="20.0" translateY="-71.0" width="260.0" GridPane.rowIndex="2" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="90.0" stroke="BLACK" strokeType="INSIDE" translateX="20.0" translateY="91.0" width="260.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="50.0" stroke="BLACK" strokeType="INSIDE" translateX="20.0" translateY="-140.0" width="260.0" GridPane.rowIndex="3" />
+                                    <FontIcon iconColor="#202742b2" iconLiteral="fas-book" iconSize="45" translateX="210.0" translateY="90.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="91.0" stroke="BLACK" strokeType="INSIDE" translateX="20.0" translateY="2.0" width="260.0" GridPane.rowIndex="1" />
+                                    <FontIcon iconColor="#202742b2" iconLiteral="fas-eye" iconSize="50" layoutX="10.0" layoutY="119.0" translateX="40.0" translateY="90.0" />
+                                    <FontIcon iconColor="#202742b2" iconLiteral="fas-heart" iconSize="50" layoutX="10.0" layoutY="119.0" translateX="125.0" translateY="90.0" />
+                                    <Label text="Readlist" translateX="207.0" translateY="120.0">
+                                       <font>
+                                          <Font name="Poppins Light" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Like" translateX="140.0" translateY="120.0">
+                                       <font>
+                                          <Font name="Poppins Light" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Read" translateX="53.0" translateY="120.0">
+                                       <font>
+                                          <Font name="Poppins Light" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Rate" translateX="130.0" translateY="-20.0" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Poppins Light" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Review or log…" translateX="95.0" translateY="75.0" GridPane.rowIndex="1">
+                                       <font>
+                                          <Font name="Poppins Light" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="Add to  List..." translateX="105.0" translateY="-15.0" GridPane.rowIndex="2">
+                                       <font>
+                                          <Font name="Poppins Light" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <GridPane.margin>
+                                    <Insets />
+                                 </GridPane.margin>
+                              </GridPane>
+                              <Label text="1939" textFill="#212844" translateX="230.0" translateY="-200.0" GridPane.columnIndex="1">
+                                 <font>
+                                    <Font name="Poppins Light" size="12.0" />
+                                 </font>
+                              </Label>
+                              <HBox prefHeight="420.0" prefWidth="390.0" GridPane.columnIndex="1" />
+                           </children>
+                        </GridPane>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>

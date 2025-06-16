@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1080.0" style="-fx-background-color: #eee9e2;" stylesheets="@../../signup.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.HomeUiController">
+   <children>
+      <HBox prefHeight="105.0" prefWidth="1080.0" style="-fx-background-color: #212844; -fx-background-radius: 0px 0px 35px 35px;">
+         <children>
+            <FontIcon iconColor="#f0e8d5cf" iconLiteral="fas-feather-alt" iconSize="30" translateX="35.0" translateY="38.0" />
+            <Label fx:id="Home" text="Fiction Press" textFill="#f0e8d5" translateX="40.0" translateY="40.0">
+               <font>
+                  <Font name="Poppins Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="DiscoveryBTN" mnemonicParsing="false" style="-fx-background-color: transparent;" text="Discovery" textFill="#eee9e2" translateX="90.0" translateY="50.0">
+               <font>
+                  <Font name="Poppins Light" size="15.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Button>
+            <Hyperlink fx:id="LibraryLink" text="Library" textFill="#f0e8d5" translateX="140.0" translateY="52.0">
+               <font>
+                  <Font name="Poppins Light" size="15.0" />
+               </font>
+            </Hyperlink>
+            <TextField fx:id="SearchField" prefHeight="40.0" prefWidth="312.0" style="-fx-background-color: transparent; -fx-border-color: #87888a; -fx-border-width: 2px 2px 2px 2px; -fx-border-radius: 20px 20px 20px 20px;" translateX="230.0" translateY="50.0" />
+            <FontIcon iconColor="#87888a" iconLiteral="far-user-circle" iconSize="50" translateX="260.0" translateY="45.0">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </FontIcon>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets left="20.0" />
+         </padding>
+      </HBox>
+      <VBox prefHeight="603.0" prefWidth="1080.0" style="-fx-background-color: #eee9e2;">
+         <children>
+            <VBox prefHeight="167.0" prefWidth="1080.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome" translateX="250.0" translateY="72.0">
+                     <font>
+                        <Font name="Poppins Light" size="25.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="userid" prefHeight="36.0" prefWidth="77.0" text="user" translateX="380.0" translateY="35.0">
+                     <font>
+                        <Font name="System Italic" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label text="Here’s what we’ve been reading …" translateX="440.0">
+                     <font>
+                        <Font name="Poppins Light" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label text="NEW ON FICTION PRESS" translateX="50.0" translateY="20.0">
+                     <font>
+                        <Font name="Poppins Light" size="13.0" />
+                     </font>
+                  </Label>
+                  <Line endX="873.2929077148438" endY="1.242693305015564" startX="-100.0" startY="0.8284622430801392" translateX="50.0" translateY="20.0" />
+               </children>
+            </VBox>
+            <VBox prefHeight="218.0" prefWidth="1080.0">
+               <children>
+                  <GridPane prefHeight="249.0" prefWidth="1080.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="522.0" minWidth="10.0" prefWidth="445.3333435058594" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="634.6666564941406" minWidth="10.0" prefWidth="634.6666564941406" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="240.0" minWidth="0.0" prefWidth="0.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="59.66668701171875" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="207.0" minHeight="10.0" prefHeight="174.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="59.333343505859375" minHeight="0.0" prefHeight="34.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <ImageView fx:id="WizardBook" fitHeight="170.0" fitWidth="150.0" onMouseClicked="#WizardOfOz" pickOnBounds="true" preserveRatio="true" translateX="50.0" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../../images/wz.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="AnneBook" fitHeight="170.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" translateX="250.0" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../../images/aogg.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label text="Anne Of Green Gables" translateX="250.0" GridPane.rowIndex="2" />
+                        <Label text="The wizard of Oz" translateX="60.0" GridPane.rowIndex="2" />
+                        <Label text="Alice's Adventures in Wonderland " translateX="-15.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label text="The Hunger Games" translateX="245.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <ImageView fx:id="SubtleBook" fitHeight="170.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" translateX="460.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../../images/saongaf.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="HungerBook" fitHeight="170.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" translateX="240.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../../images/hunger.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="AliceBook" fitHeight="170.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" translateX="20.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <image>
+                              <Image url="@../../images/alice.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label text="The Subtle Art Of Not Giving A Fck" translateX="430.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                     </children>
+                  </GridPane>
+               </children>
+            </VBox>
+            <Button fx:id="Hunger" mnemonicParsing="false" onAction="#HungerGames" text="Hunger" translateX="710.0" />
+            <Button fx:id="Wizard" mnemonicParsing="false" onAction="#WizardOfOz" text="Oz" />
+         </children>
+      </VBox>
+   </children>
+</VBox>
